@@ -3,3 +3,9 @@
 ################################################################################
 
 /PeopleAndPets.Core/bin/Debug/netcoreapp3.1
+/.vs/PeopleAndPets/v16/TestStore/0
+/PeopleAndPets.Core/obj
+/PeopleAndPets.Core.Application/bin/Debug/netcoreapp3.1
+/PeopleAndPets.Core.Application/obj
+/PeopleAndPets.Infrastructure/bin/Debug/netcoreapp3.1
+/PeopleAndPets.Infrastructure/obj
