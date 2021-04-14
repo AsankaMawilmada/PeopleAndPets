@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-header">
+    <h3>Grouped cats by owners gender</h3>
+    <p>This component demonstrates fetching data from the server.</p>
+  </div>
+
+  <div class="d-flex justify-content-center" spinner [busy]="busy" *ngIf="busy; else loaded"></div>
+
+
+  <ng-template #loaded>
+    <ul class="list-group list-group-flush" *ngIf="groups; else noData">
+      <li class="list-group-item" *ngFor="let group of groups">
+        <h6>{{ group.gender }}</h6>
+        <ul>
+          <li *ngFor="let petName of group.pets">{{ petName }}</li>
+        </ul>
+      </li>
+    </ul>
+    <ng-template #noData> Sorry no data. </ng-template>
+  </ng-template>
+</div>

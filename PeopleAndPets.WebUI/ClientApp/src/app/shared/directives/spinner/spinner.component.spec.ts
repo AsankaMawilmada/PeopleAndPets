@@ -23,6 +23,23 @@ describe('SpinnerComponent', () => {
   });
 
   it('should create', () => {
+    let element = fixture.debugElement.query(By.css('.spinner-border'));
+
     expect(component).toBeTruthy();
+    expect(component.busy).toBeFalsy();
+    expect(element).toBeNull();
+  });
+
+  describe('when "busy" property changed to true', () => {
+
+    it('should be visible', () => {
+      component.busy = true;
+      fixture.detectChanges();
+
+      let element = fixture.debugElement.query(By.css('.spinner-border'));
+      expect(component.busy).toBeTruthy();
+      expect(element).not.toBeNull();
+    });
+
   });
 });

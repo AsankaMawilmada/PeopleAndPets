@@ -6,7 +6,10 @@ import { CatService } from './cat.service';
 describe('Service: Cat', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [CatService]
+      providers: [
+        CatService,
+        { provide: 'BASE_URL ', useValue: "http://example.com/api" }
+      ]
     });
   });
 

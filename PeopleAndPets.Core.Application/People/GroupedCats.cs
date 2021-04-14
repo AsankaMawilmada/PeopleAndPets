@@ -19,12 +19,10 @@ namespace PeopleAndPets.Core.Application.People
         }
 
         public class QueryHandler : IRequestHandler<Query, List<GenderGroupEnvelope>>
-        {
-            private readonly IMapper _mapper;
+        {          
             private readonly IPeopleService _peopleService;
-            public QueryHandler(IMapper mapper, IPeopleService peopleService)
+            public QueryHandler(IPeopleService peopleService)
             {
-                _mapper = mapper;
                 _peopleService = peopleService;
             }
             public async Task<List<GenderGroupEnvelope>> Handle(Query request, CancellationToken cancellationToken)

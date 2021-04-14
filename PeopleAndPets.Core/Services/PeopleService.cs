@@ -12,19 +12,19 @@ namespace PeopleAndPets.Core.Services
 {
     public class PeopleService : IPeopleService
     {
+        private readonly IHttpClientFactory _httpClientFactory;
         private readonly AppSettings _appSettings;
-        public PeopleService(IOptions<AppSettings> appSettings)
+        public PeopleService(IHttpClientFactory httpClientFactory, IOptions<AppSettings> appSettings)
         {
+            _httpClientFactory = httpClientFactory;
             _appSettings = appSettings.Value;
         }
 
         public async Task<List<Person>> GetPeopleAsync()
         {
-            using (var client = new HttpClient())
+            using (HttpClient httpclient = _httpClientFactory.CreateClient())
+            using (HttpResponseMessage response = await httpclient.GetAsync($"{_appSettings.PeopleAndPetsAPIBaseURL}people.json"))
             {
-                var response = await client.GetAsync($"{_appSettings.PeopleAndPetsAPIBaseURL}people.json");
-                response.EnsureSuccessStatusCode();
-
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     var content = await response.Content.ReadAsStringAsync();
@@ -32,9 +32,8 @@ namespace PeopleAndPets.Core.Services
 
                     return result;
                 }
-
-                return new List<Person>();
-            }
+                return null;
+            }       
         }
     }
 }

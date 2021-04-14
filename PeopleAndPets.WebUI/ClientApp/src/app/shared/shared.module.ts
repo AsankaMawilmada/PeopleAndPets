@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SpinnerComponent } from './directives';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+
   ],
   declarations: [
-    SpinnerComponent
+    SpinnerComponent,
+    NavMenuComponent
   ],
   providers: [ ],
   exports:[
-    SpinnerComponent
+    SpinnerComponent,
+    NavMenuComponent
   ]
 })
 export class SharedModule { }

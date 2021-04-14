@@ -9,3 +9,8 @@
 /PeopleAndPets.Core.Application/obj
 /PeopleAndPets.Infrastructure/bin/Debug/netcoreapp3.1
 /PeopleAndPets.Infrastructure/obj
+/.vs/PeopleAndPets/config
+/.vs/PeopleAndPets/DesignTimeBuild
+/.vs/PeopleAndPets/v16
+/PeopleAndPets.Core.Tests/bin/Debug/netcoreapp3.1
+/PeopleAndPets.Core.Tests/obj

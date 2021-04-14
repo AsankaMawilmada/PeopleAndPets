@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleAndPets.Core.Applicat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleAndPets.WebUI", "PeopleAndPets.WebUI\PeopleAndPets.WebUI.csproj", "{AD7DC106-969D-4407-8445-F4208CAB9EFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleAndPets.Core.Tests", "PeopleAndPets.Core.Tests\PeopleAndPets.Core.Tests.csproj", "{AE6DA1F7-B8A0-4B8E-98E7-2144297720ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{AD7DC106-969D-4407-8445-F4208CAB9EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7DC106-969D-4407-8445-F4208CAB9EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7DC106-969D-4407-8445-F4208CAB9EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE6DA1F7-B8A0-4B8E-98E7-2144297720ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE6DA1F7-B8A0-4B8E-98E7-2144297720ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE6DA1F7-B8A0-4B8E-98E7-2144297720ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE6DA1F7-B8A0-4B8E-98E7-2144297720ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{6C328746-BAD6-4007-9D31-48289A7128B0} = {A5107192-53CF-4895-8050-70608D4C7E61}
 		{B5F35709-CDA5-48FD-BE86-5AFFE1243BBA} = {7EAB6053-588A-4F5E-870C-5B8B0A75AB2D}
 		{AD7DC106-969D-4407-8445-F4208CAB9EFB} = {A619FABF-B114-48CF-9413-B43EA179EA7F}
+		{AE6DA1F7-B8A0-4B8E-98E7-2144297720ED} = {F1B3A430-C666-4101-BA6D-BD4EAE32DF0E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {764E7568-234D-4B35-AC11-934AEED32E10}

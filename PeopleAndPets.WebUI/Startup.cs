@@ -24,9 +24,8 @@ namespace pets
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMediatR(typeof(GroupedCats.QueryHandler).Assembly);
-            services.AddAutoMapper(typeof(GroupedCats.QueryHandler).Assembly);
-
+            services.AddMediatR(typeof(GroupedCats.QueryHandler).Assembly);          
+            services.AddHttpClient();
             services.AddServices();
             services.AddConfigSettings(Configuration);
 

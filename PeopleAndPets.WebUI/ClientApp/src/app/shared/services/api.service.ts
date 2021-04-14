@@ -46,28 +46,4 @@ export class ApiService {
       .get(`${this.API_BASE_URL}${path}`, { params })
       .pipe(catchError(this.formatErrors));
   }
-
-  put(path: string, body: Object = {}): Observable<any> {
-    return this.http
-      .put(`${this.API_BASE_URL}${path}`, JSON.stringify(body))
-      .pipe(catchError(this.formatErrors));
-  }
-
-  patch(path: string, body: Object = {}): Observable<any> {
-    return this.http
-      .patch(`${this.API_BASE_URL}${path}`, JSON.stringify(body))
-      .pipe(catchError(this.formatErrors));
-  }
-
-  post(path: string, body: Object = {}): Observable<any> {
-    return this.http
-      .post(`${this.API_BASE_URL}${path}`, JSON.stringify(body))
-      .pipe(catchError(this.formatErrors));
-  }
-
-  delete(path: string): Observable<any> {
-    return this.http
-      .delete(`${this.API_BASE_URL}${path}`)
-      .pipe(catchError(this.formatErrors));
-  }
 }
