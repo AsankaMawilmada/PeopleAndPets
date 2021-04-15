@@ -9,12 +9,10 @@ import { catchError } from 'rxjs/operators';
 })
 export class ApiService {
   API_BASE_URL = '';
-  constructor(
-    @Inject('BASE_URL') BASE_URL: string,
-    private http: HttpClient,
+  constructor(private http: HttpClient,
     private notificationService: NotificationService
   ) {
-    this.API_BASE_URL = `${BASE_URL}api/`;
+    this.API_BASE_URL = `api/`;
   }
 
   private formatErrors(error: HttpErrorResponse) {
