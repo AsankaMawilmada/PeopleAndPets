@@ -16,6 +16,8 @@ In visual studio -> Rebuild solution (should restore NuGet packages automaticall
 ## Running the project
 Set "PeopleAndPets.WebUI" as a Startup project, press F5
 
+![alt text](https://github.com/AsankaMawilmada/PeopleAndPets/blob/main/Screenshots/Running%20application.PNG?raw=true)
+
 ## Unit tests
 
 ### Backend
